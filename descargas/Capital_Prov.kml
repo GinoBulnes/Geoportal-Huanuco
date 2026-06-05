@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Capital_Prov" id="Capital_Prov">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="nom_capita" type="string"></SimpleField>
+	<SimpleField name="poblacion" type="float"></SimpleField>
+</Schema>
+<Folder><name>Capital_Prov</name>
+  <Placemark id="Capital_Prov.1">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="nom_capita">HUACRACHUCO</SimpleData>
+		<SimpleData name="poblacion">26622</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.1466293094102,-8.60723300577214</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.2">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="nom_capita">HUACAYBAMBA</SimpleData>
+		<SimpleData name="poblacion">16551</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9543456776357,-9.03761954943077</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.3">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="nom_capita">LLATA</SimpleData>
+		<SimpleData name="poblacion">52039</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.8162612653605,-9.54927726160558</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.4">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="nom_capita">LA UNION</SimpleData>
+		<SimpleData name="poblacion">33258</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.8003158289337,-9.82477946582769</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.5">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="nom_capita">CHAVINILLO</SimpleData>
+		<SimpleData name="poblacion">19897</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.6082687113068,-9.85824961883038</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.6">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">6</SimpleData>
+		<SimpleData name="nom_capita">TINGO MARIA</SimpleData>
+		<SimpleData name="poblacion">127793</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-75.9968871834491,-9.29502959929168</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.7">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">7</SimpleData>
+		<SimpleData name="nom_capita">HUANUCO</SimpleData>
+		<SimpleData name="poblacion">293397</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.2423858370605,-9.92717166280683</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.8">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">8</SimpleData>
+		<SimpleData name="nom_capita">PANAO</SimpleData>
+		<SimpleData name="poblacion">49159</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-75.9932174419538,-9.89866633834262</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.9">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">9</SimpleData>
+		<SimpleData name="nom_capita">PUERTO INCA</SimpleData>
+		<SimpleData name="poblacion">32538</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.9651412733368,-9.37647624776271</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.10">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">10</SimpleData>
+		<SimpleData name="nom_capita">AMBO</SimpleData>
+		<SimpleData name="poblacion">50880</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.2043685648384,-10.1296491167464</coordinates></Point>
+  </Placemark>
+  <Placemark id="Capital_Prov.11">
+	<ExtendedData><SchemaData schemaUrl="#Capital_Prov">
+		<SimpleData name="id">11</SimpleData>
+		<SimpleData name="nom_capita">JESUS</SimpleData>
+		<SimpleData name="poblacion">18913</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.6304244720766,-10.0789823083277</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
