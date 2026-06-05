@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoportal Huánuco - Gino Bulnes Guerra</title>
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding:0;
+    }
+
+    header{
+        background:#0b4f6c;
+        color:white;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav{
+        background:#1f6f8b;
+        text-align:center;
+        padding:10px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:15px;
+        font-weight:bold;
+    }
+
+    section{
+        padding:25px;
+    }
+
+    h2{
+        color:#0b4f6c;
+    }
+
+    button{
+        padding:10px 15px;
+        margin:5px;
+        cursor:pointer;
+    }
+
+    #map{
+        width:100%;
+        height:500px;
+        border:1px solid #ccc;
+    }
+
+    #coords{
+        padding:10px;
+        background:#f5f5f5;
+        font-weight:bold;
+    }
+
+    table{
+        border-collapse:collapse;
+        width:100%;
+    }
+
+    table, th, td{
+        border:1px solid #ccc;
+    }
+
+    th, td{
+        padding:10px;
+    }
+
+    footer{
+        background:#0b4f6c;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <h1>Geoportal Web - Huánuco</h1>
+    <p>Gino Bulnes Guerra</p>
+</header>
+
+<nav>
+    <a href="#cv">Currículum Vitae</a>
+    <a href="#wms">Visualización WMS</a>
+    <a href="#descargas">Descargas</a>
+    <a href="#visor">Visor OpenLayers</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="cv">
+
+```
+<h2>1. Currículum Vitae</h2>
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <td>Gino Bulnes Guerra</td>
+    </tr>
+
+    <tr>
+        <th>Profesión</th>
+        <td>Ingeniero Forestal</td>
+    </tr>
+
+    <tr>
+        <th>Especialización</th>
+        <td>Teledetección y Sistemas de Información Geográfica</td>
+    </tr>
+
+    <tr>
+        <th>Universidad</th>
+        <td>Universidad Andina Simón Bolívar</td>
+    </tr>
+
+    <tr>
+        <th>Correo</th>
+        <td>ginob.guerra01@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th>Teléfono</th>
+        <td>990433205</td>
+    </tr>
+</table>
+```
+
+</section>
+
+<section id="wms">
+
+```
+<h2>2. Visualización de Capas WMS</h2>
+
+<button onclick="cambiarCapa('Capital_Prov')">Capitales</button>
+
+<button onclick="cambiarCapa('Red_nacional_Hco')">Red Vial</button>
+
+<button onclick="cambiarCapa('Provincias_Huanuco')">Provincias</button>
+
+<button onclick="cambiarCapa('Region_Huanuco')">Región</button>
+
+<button onclick="cambiarCapa('Region_Huanuco,Provincias_Huanuco,Red_nacional_Hco,Capital_Prov')">
+    Composición
+</button>
+```
+
+</section>
+
+<section id="descargas">
+
+```
+<h2>3. Descarga de Capas</h2>
+
+<p>Subir posteriormente los archivos SHP, KML y GML a la carpeta descargas.</p>
+
+<ul>
+
+    <li>
+        Capital_Prov
+        |
+        <a href="descargas/Capital_Prov.zip">SHP</a>
+        |
+        <a href="descargas/Capital_Prov.kml">KML</a>
+        |
+        <a href="descargas/Capital_Prov.gml">GML</a>
+    </li>
+
+    <li>
+        Red_nacional_Hco
+        |
+        <a href="descargas/Red_nacional_Hco.zip">SHP</a>
+        |
+        <a href="descargas/Red_nacional_Hco.kml">KML</a>
+        |
+        <a href="descargas/Red_nacional_Hco.gml">GML</a>
+    </li>
+
+    <li>
+        Provincias_Huanuco
+        |
+        <a href="descargas/Provincias_Huanuco.zip">SHP</a>
+        |
+        <a href="descargas/Provincias_Huanuco.kml">KML</a>
+        |
+        <a href="descargas/Provincias_Huanuco.gml">GML</a>
+    </li>
+
+    <li>
+        Region_Huanuco
+        |
+        <a href="descargas/Region_Huanuco.zip">SHP</a>
+        |
+        <a href="descargas/Region_Huanuco.kml">KML</a>
+        |
+        <a href="descargas/Region_Huanuco.gml">GML</a>
+    </li>
+
+</ul>
+```
+
+</section>
+
+<section id="visor">
+
+```
+<h2>4. Visor OpenLayers</h2>
+
+<div id="map"></div>
+
+<div id="coords">
+    Coordenadas:
+</div>
+```
+
+</section>
+
+<section id="contacto">
+
+```
+<h2>5. Contacto</h2>
+
+<form>
+
+    <input type="text" placeholder="Nombre" style="width:300px;"><br><br>
+
+    <input type="email" placeholder="Correo" style="width:300px;"><br><br>
+
+    <textarea rows="5" cols="50" placeholder="Mensaje"></textarea><br><br>
+
+    <a href="mailto:ginob.guerra01@gmail.com">
+        <button type="button">
+            Enviar correo
+        </button>
+    </a>
+
+</form>
+```
+
+</section>
+
+<footer>
+    Geoportal Académico - Universidad Andina Simón Bolívar
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+
+<script>
+
+const wmsLayer = new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+        url: 'https://wms.prod.qgiscloud.com/Gino_Bulnes/Trabajo_1?',
+        params: {
+            'LAYERS':'Region_Huanuco,Provincias_Huanuco,Red_nacional_Hco,Capital_Prov',
+            'TILED':true
+        },
+        serverType:'qgis'
+    })
+});
+
+const map = new ol.Map({
+    target:'map',
+    layers:[
+        new ol.layer.Tile({
+            source:new ol.source.OSM()
+        }),
+        wmsLayer
+    ],
+    view:new ol.View({
+        center: ol.proj.fromLonLat([-76.0,-9.4]),
+        zoom:8
+    })
+});
+
+map.addControl(new ol.control.ScaleLine());
+
+function cambiarCapa(nombre){
+
+    wmsLayer.getSource().updateParams({
+        'LAYERS': nombre
+    });
+
+}
+
+map.on('pointermove', function(evt){
+
+    const coord = ol.proj.toLonLat(evt.coordinate);
+
+    document.getElementById('coords').innerHTML =
+        'Longitud: ' + coord[0].toFixed(5) +
+        ' | Latitud: ' + coord[1].toFixed(5);
+
+});
+
+</script>
+
+</body>
+</html>
